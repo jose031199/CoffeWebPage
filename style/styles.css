@@ -27,8 +27,7 @@ body{
 /** Globals**/
 
 .container{
-    max-width: 120rem;
-    width: 90%;
+    width: min(90%,120rem);
     margin: 0 auto;
 }
 
@@ -38,7 +37,7 @@ a{
 
 h1,h2,h3,h4{
     font-family: var(--headers);
-    line-height: 3rem;
+    line-height: 2;
 }
 
 h1{
@@ -107,7 +106,7 @@ img{
 }
 
 .barra{
-    padding: 4rem;
+    padding-top: 4rem;
 }
 .logo{
     color: var(--blanco);
@@ -124,7 +123,7 @@ img{
 @media (min-width: 768px){
     .navegacion{
         display: flex;
-        gap: 2rem;
+        gap: 3rem;
     }
 }
 
@@ -136,7 +135,8 @@ img{
 }
 
 .navegacion{
-    padding: 2rem;
+   line-height: 2;
+   padding:0 2.5rem;
 }
 
 /*Blog*/
@@ -183,3 +183,45 @@ img{
     background-color: var(--negro);
 }
 
+.btn--secondary{
+    background-color: var(--primario);
+}
+
+
+/*Courses*/
+
+.courses{
+    list-style: none;
+}
+
+.widget-course{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.widget-course:last-of-type{
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.widget-course__label{
+    font-family: var(--headers);
+    font-weight: bold;
+}
+
+.widget-course__info{
+    font-weight: 400;
+}
+
+.widget-course__label,
+.widget-course__info{
+    font-size: 2rem;
+}
+
+/*Footer */
+
+footer{
+    background-color: var(--negro);
+    padding-bottom:4rem;
+    margin-top: 4rem;
+}
