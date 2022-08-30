@@ -125,6 +125,10 @@ img{
         display: flex;
         gap: 3rem;
     }
+
+    .navegacion__enlace{
+        margin:0 .5rem;
+    }
 }
 
 .navegacion__enlace{
@@ -135,8 +139,7 @@ img{
 }
 
 .navegacion{
-   line-height: 2;
-   padding:0 2.5rem;
+    line-height: 2;
 }
 
 /*Blog*/
@@ -224,4 +227,14 @@ footer{
     background-color: var(--negro);
     padding-bottom:4rem;
     margin-top: 4rem;
+}
+
+
+/*About us*/
+@media (min-width: 768px){
+    .about-us{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
 }
