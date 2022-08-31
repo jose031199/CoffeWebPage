@@ -7,9 +7,21 @@
     <title>BlogDeCaf&eacute;</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/styles.css">
+
+    <!--Prefetch para que la visita de las paginas sean rapido-->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!--Preload los links que queremos que se cargen primero-->
+    <link rel="preload" href="style/normalize.css" as="style">
     <link rel="stylesheet" href="style/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="preload" href="style/styles.css" as="style">
+    <link rel="stylesheet" href="style/styles.css">
+
 </head>
 <body>
     <!--Starting header-->
@@ -43,7 +55,10 @@
 
             <article class="entry">
                 <div class="entry__img">
-                    <img src="img/blog1.jpg" alt="image blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp"/>
+                        <img loading="lazy" src="img/blog1.jpg" alt="image blog">
+                    </picture>
                 </div>
 
                 <div class="entry__content">
@@ -56,7 +71,10 @@
 
             <article class="entry">
                 <div class="entry__img">
-                    <img src="img/blog2.jpg" alt="image blog">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp"/>
+                        <img loading="lazy" src="img/blog2.jpg" alt="image blog">
+                    </picture>
                 </div>
 
                 <div class="entry__content">
@@ -69,7 +87,10 @@
 
             <article class="entry">
                 <div class="entry__img">
-                    <img src="img/blog3.jpg" alt="image blog">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="image blog">
+                    </picture>
                 </div>
 
                 <div class="entry__content">
@@ -114,7 +135,6 @@
     </div>
 
     <!--Footer-->
-
     <footer class="footer">
         <div class="container">
             <div class="barra">
@@ -131,5 +151,7 @@
         </div>
     </footer>
 
+
+    <script src="js/modernizer.js"></script>
 </body>
 </html>
