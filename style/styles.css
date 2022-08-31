@@ -238,3 +238,37 @@ footer{
         column-gap: 2rem;
     }
 }
+
+/*Courses*/
+
+.course{
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--gris);
+}
+
+@media (min-width: 768px){
+    .course{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        column-gap: 2rem;
+    }
+
+}
+
+.course:last-of-type{
+    border: none;
+}
+
+.course__label{
+    font-family: var(--headers);
+    font-weight: bold;
+}
+
+.course__info{
+    font-weight: 400;
+}
+
+.course__label,
+.course__info{
+    font-size: 2rem;
+}
