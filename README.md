@@ -14,4 +14,4 @@ My goals for this project was to:
 ![2022-08-30_22h45_06](https://user-images.githubusercontent.com/68754315/187605480-7c1f5506-a5e5-4514-9084-9ace8c98ac0b.gif)
 
 ## Visit WebPage
-https://app.netlify.com/sites/inspiring-figolla-7167ae/overview
+https://inspiring-figolla-7167ae.netlify.app/
