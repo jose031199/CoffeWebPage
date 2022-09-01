@@ -7,15 +7,8 @@
     <title>BlogDeCaf&eacute;</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!--Preload-->
-    <link rel="preload" href="style/normalize.css" as="style">
     <link rel="stylesheet" href="style/normalize.css">
-
-    <link rel="preload" href="style/styles.css" as="style">
     <link rel="stylesheet" href="style/styles.css">
-    
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" as="font" crossorigin="crossorigin">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 
 
@@ -38,7 +31,7 @@
         </div>
 
         <div class="header__texto">
-            <h2>Blog de Caf&eacute; con consejos y cursos</h2>
+            <h2 id="heading">Blog de Caf&eacute; con consejos y cursos</h2>
             <p>Aprende de los expertos</p>
         </div>
     </header>
@@ -56,9 +49,10 @@
                 <input
                 class="field__input" 
                 type="text" 
-                name="nombre" 
-                id="txt_nombre" 
-                placeholder="Tu nombre">
+                name="txt_nombre" 
+                id="name" 
+                placeholder="Tu nombre"
+                >
             </div>
 
             <div class="field">
@@ -67,7 +61,7 @@
                 class="field__input"
                 type="email" 
                 name="email" 
-                id="txt_email" 
+                id="email" 
                 placeholder="Tu email">
             </div>
 
@@ -76,7 +70,7 @@
                 <textarea 
                 class="field__input field__label--textarea"
                 name="" 
-                id="txt_mensaje"></textarea>
+                id="message"></textarea>
             </div>
 
             <div class="field">
@@ -105,6 +99,7 @@
     </footer>
 
     <script src="js/modernizer.js"></script>
+    <script src="js/app.js"></script>
 
 
 </body>
